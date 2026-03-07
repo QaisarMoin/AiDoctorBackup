@@ -1,0 +1,73 @@
+{
+  "ct_scan_tests": [
+    {
+      "category": "Brain",
+      "tests": [
+        { "id": "CT_BRAIN_PLAIN", "name": "CT Brain (Plain)" },
+        { "id": "CT_BRAIN_CONTRAST", "name": "CT Brain (Contrast)" },
+        { "id": "CT_BRAIN_ANGIO", "name": "CT Brain Angiography" }
+      ]
+    },
+    {
+      "category": "Spine",
+      "tests": [
+        { "id": "CT_CERVICAL_SPINE", "name": "CT Cervical Spine" },
+        { "id": "CT_DORSAL_SPINE", "name": "CT Dorsal / Thoracic Spine" },
+        { "id": "CT_LUMBAR_SPINE", "name": "CT Lumbar Spine" },
+        { "id": "CT_WHOLE_SPINE", "name": "CT Whole Spine" }
+      ]
+    },
+    {
+      "category": "Chest",
+      "tests": [
+        { "id": "CT_CHEST", "name": "CT Chest" },
+        { "id": "HRCT_CHEST", "name": "HRCT Chest" }
+      ]
+    },
+    {
+      "category": "Abdomen & Pelvis",
+      "tests": [
+        { "id": "CT_ABDOMEN", "name": "CT Abdomen" },
+        { "id": "CT_PELVIS", "name": "CT Pelvis" },
+        { "id": "CT_ABDOMEN_PELVIS", "name": "CT Abdomen + Pelvis" },
+        { "id": "CT_KUB", "name": "CT KUB (Kidney / Ureter / Bladder)" }
+      ]
+    },
+    {
+      "category": "Heart & Vessels",
+      "tests": [
+        { "id": "CT_CORONARY_ANGIO", "name": "CT Coronary Angiography" },
+        { "id": "CT_PULMONARY_ANGIO", "name": "CT Pulmonary Angiography" }
+      ]
+    },
+    {
+      "category": "Bones & Joints",
+      "tests": [
+        { "id": "CT_KNEE", "name": "CT Knee" },
+        { "id": "CT_SHOULDER", "name": "CT Shoulder" },
+        { "id": "CT_HIP", "name": "CT Hip" },
+        { "id": "CT_ANKLE", "name": "CT Ankle" },
+        { "id": "CT_WRIST", "name": "CT Wrist" }
+      ]
+    },
+    {
+      "category": "ENT / Face",
+      "tests": [
+        { "id": "CT_PNS", "name": "CT PNS (Sinuses)" },
+        { "id": "CT_TEMPORAL_BONE", "name": "CT Temporal Bone" },
+        { "id": "CT_ORBIT", "name": "CT Orbit" }
+      ]
+    },
+    {
+      "category": "Special CT",
+      "tests": [
+        { "id": "CT_WHOLE_BODY", "name": "CT Whole Body" },
+        { "id": "VIRTUAL_COLONOSCOPY", "name": "CT Virtual Colonoscopy" }
+      ]
+    }
+  ],
+  "options": [
+    { "id": "WITH_CONTRAST", "name": "With Contrast" },
+    { "id": "WITHOUT_CONTRAST", "name": "Without Contrast" }
+  ]
+}

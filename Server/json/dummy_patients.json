@@ -1,0 +1,60 @@
+
+
+[
+  {
+    "id": 1, "name": "Rahul Sharma", "age": 34, "gender": "male",
+    "phone": "9876543210", "email": "rahul.sharma@gmail.com", "address": "12, MG Road, Delhi",
+    "bp": "120/80", "weight": "72 kg", "sugar": "95 mg/dL", "pulse_rate": "78 bpm",
+    "temperature": "98.6°F", "spo2": "98%", "status": "active",
+    "created_at": "2025-01-10T09:00:00Z", "last_visit": "2026-02-10T10:30:00Z"
+  },
+  {
+    "id": 2, "name": "Priya Mehta", "age": 28, "gender": "female",
+    "phone": "9123456780", "email": "priya.mehta@yahoo.com", "address": "45, Lajpat Nagar, Mumbai",
+    "bp": "110/70", "weight": "58 kg", "sugar": "88 mg/dL", "pulse_rate": "72 bpm",
+    "temperature": "98.4°F", "spo2": "99%", "status": "active",
+    "created_at": "2025-02-14T11:00:00Z", "last_visit": "2026-02-15T09:00:00Z"
+  },
+  {
+    "id": 3, "name": "Mohit Yadav", "age": 45, "gender": "male",
+    "phone": "9988776655", "email": "mohit.yadav@gmail.com", "address": "78, Civil Lines, Lucknow",
+    "bp": "140/90", "weight": "85 kg", "sugar": "145 mg/dL", "pulse_rate": "88 bpm",
+    "temperature": "99.1°F", "spo2": "96%", "status": "critical",
+    "created_at": "2025-03-05T08:30:00Z", "last_visit": "2026-02-17T14:00:00Z"
+  },
+  {
+    "id": 4, "name": "Sunita Devi", "age": 62, "gender": "female",
+    "phone": "9765432100", "email": "sunita.devi@gmail.com", "address": "22, Sector 15, Chandigarh",
+    "bp": "150/95", "weight": "68 kg", "sugar": "180 mg/dL", "pulse_rate": "82 bpm",
+    "temperature": "98.8°F", "spo2": "95%", "status": "critical",
+    "created_at": "2025-04-20T10:00:00Z", "last_visit": "2026-02-18T08:00:00Z"
+  },
+  {
+    "id": 5, "name": "Arjun Patel", "age": 22, "gender": "male",
+    "phone": "9654321098", "email": "arjun.patel@outlook.com", "address": "5, Navrangpura, Ahmedabad",
+    "bp": "118/76", "weight": "65 kg", "sugar": "90 mg/dL", "pulse_rate": "70 bpm",
+    "temperature": "98.2°F", "spo2": "99%", "status": "active",
+    "created_at": "2025-05-11T12:00:00Z", "last_visit": "2026-01-20T11:00:00Z"
+  },
+  {
+    "id": 6, "name": "Kavita Singh", "age": 38, "gender": "female",
+    "phone": "9543210987", "email": "kavita.singh@gmail.com", "address": "90, Hazratganj, Lucknow",
+    "bp": "125/82", "weight": "61 kg", "sugar": "102 mg/dL", "pulse_rate": "76 bpm",
+    "temperature": "98.6°F", "spo2": "97%", "status": "active",
+    "created_at": "2025-06-01T09:30:00Z", "last_visit": "2026-02-12T15:30:00Z"
+  },
+  {
+    "id": 7, "name": "Deepak Gupta", "age": 55, "gender": "male",
+    "phone": "9432109876", "email": "deepak.gupta@rediffmail.com", "address": "33, Karol Bagh, Delhi",
+    "bp": "135/88", "weight": "78 kg", "sugar": "130 mg/dL", "pulse_rate": "84 bpm",
+    "temperature": "99.0°F", "spo2": "96%", "status": "stable",
+    "created_at": "2025-07-15T07:00:00Z", "last_visit": "2026-02-05T10:00:00Z"
+  },
+  {
+    "id": 8, "name": "Anita Kumari", "age": 31, "gender": "female",
+    "phone": "9321098765", "email": "anita.kumari@gmail.com", "address": "17, Boring Road, Patna",
+    "bp": "112/72", "weight": "54 kg", "sugar": "85 mg/dL", "pulse_rate": "68 bpm",
+    "temperature": "98.3°F", "spo2": "99%", "status": "active",
+    "created_at": "2025-08-22T13:00:00Z", "last_visit": "2026-02-16T09:45:00Z"
+  }
+]

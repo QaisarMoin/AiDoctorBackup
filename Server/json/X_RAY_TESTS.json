@@ -1,0 +1,36 @@
+{
+  "xray_tests": [
+    {
+      "category": "Chest",
+      "tests": [
+        { "id": "XRAY_CHEST_PA", "name": "X-Ray Chest (PA View)" },
+        { "id": "XRAY_CHEST_AP", "name": "X-Ray Chest (AP View)" }
+      ]
+    },
+    {
+      "category": "Spine",
+      "tests": [
+        { "id": "XRAY_CERVICAL_SPINE", "name": "X-Ray Cervical Spine" },
+        { "id": "XRAY_DORSAL_SPINE", "name": "X-Ray Dorsal Spine" },
+        { "id": "XRAY_LUMBAR_SPINE", "name": "X-Ray Lumbar Spine" }
+      ]
+    },
+    {
+      "category": "Bones & Joints",
+      "tests": [
+        { "id": "XRAY_KNEE", "name": "X-Ray Knee" },
+        { "id": "XRAY_SHOULDER", "name": "X-Ray Shoulder" },
+        { "id": "XRAY_HIP", "name": "X-Ray Hip" },
+        { "id": "XRAY_WRIST", "name": "X-Ray Wrist" },
+        { "id": "XRAY_ANKLE", "name": "X-Ray Ankle" }
+      ]
+    },
+    {
+      "category": "Skull & Face",
+      "tests": [
+        { "id": "XRAY_SKULL", "name": "X-Ray Skull" },
+        { "id": "XRAY_PNS", "name": "X-Ray PNS (Sinuses)" }
+      ]
+    }
+  ]
+}

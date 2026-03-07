@@ -1,0 +1,72 @@
+{
+  "mri_tests": [
+    {
+      "category": "Brain",
+      "tests": [
+        { "id": "MRI_BRAIN_PLAIN", "name": "MRI Brain (Plain)" },
+        { "id": "MRI_BRAIN_CONTRAST", "name": "MRI Brain (Contrast)" },
+        { "id": "MRI_BRAIN_MRA", "name": "MRI Brain + MRA" },
+        { "id": "MRI_BRAIN_MRV", "name": "MRI Brain + MRV" },
+        { "id": "MRI_FMRI", "name": "Functional MRI (fMRI)" }
+      ]
+    },
+    {
+      "category": "Spine",
+      "tests": [
+        { "id": "MRI_CERVICAL_SPINE", "name": "MRI Cervical Spine" },
+        { "id": "MRI_DORSAL_SPINE", "name": "MRI Dorsal / Thoracic Spine" },
+        { "id": "MRI_LUMBAR_SPINE", "name": "MRI Lumbar Spine" },
+        { "id": "MRI_WHOLE_SPINE", "name": "MRI Whole Spine" }
+      ]
+    },
+    {
+      "category": "Joints & Bones",
+      "tests": [
+        { "id": "MRI_KNEE", "name": "MRI Knee" },
+        { "id": "MRI_SHOULDER", "name": "MRI Shoulder" },
+        { "id": "MRI_HIP", "name": "MRI Hip" },
+        { "id": "MRI_ANKLE", "name": "MRI Ankle" },
+        { "id": "MRI_WRIST", "name": "MRI Wrist" },
+        { "id": "MRI_ELBOW", "name": "MRI Elbow" }
+      ]
+    },
+    {
+      "category": "Heart & Vessels",
+      "tests": [
+        { "id": "CARDIAC_MRI", "name": "Cardiac MRI" },
+        { "id": "MRI_MRA_BODY", "name": "MRI Angiography (MRA)" },
+        { "id": "MRI_MRV_BODY", "name": "MRI Venography (MRV)" }
+      ]
+    },
+    {
+      "category": "Chest & Abdomen",
+      "tests": [
+        { "id": "MRI_CHEST", "name": "MRI Chest" },
+        { "id": "MRI_ABDOMEN", "name": "MRI Abdomen" },
+        { "id": "MRI_PELVIS", "name": "MRI Pelvis" },
+        { "id": "MRCP", "name": "MRCP (Liver / Gall Bladder / Pancreas)" }
+      ]
+    },
+    {
+      "category": "Special MRI",
+      "tests": [
+        { "id": "MRI_BREAST", "name": "MRI Breast" },
+        { "id": "MRI_PROSTATE", "name": "MRI Prostate" },
+        { "id": "MRI_FETAL", "name": "MRI Fetal" },
+        { "id": "MRI_SPECTROSCOPY", "name": "MRI Spectroscopy" },
+        { "id": "MRI_DIFFUSION", "name": "MRI Diffusion" },
+        { "id": "MRI_PERFUSION", "name": "MRI Perfusion" }
+      ]
+    },
+    {
+      "category": "Full Body",
+      "tests": [
+        { "id": "MRI_WHOLE_BODY", "name": "MRI Whole Body" }
+      ]
+    }
+  ],
+  "options": [
+    { "id": "WITH_CONTRAST", "name": "With Contrast" },
+    { "id": "WITHOUT_CONTRAST", "name": "Without Contrast" }
+  ]
+}

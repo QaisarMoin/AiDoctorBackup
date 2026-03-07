@@ -1,0 +1,307 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════════
+   SOFT CHARCOAL — Dark Mode (Exact Design Tokens)
+   Matte · Zero Blur · Zero Vibrant Colors
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,600,500,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── Design Tokens ──────────────────────────────────────────── */
+.dark {
+  --bg-app:        #18181B;
+  --bg-surface:    #27272A;
+  --bg-hover:      #2e2e32;   /* VERY subtle hover — barely different */
+  --bg-input:      #121214;
+  --border:        #3F3F46;
+  --accent:        #8B5CF6;
+  --accent-muted:  #6d4fc0;   /* toned-down for dark bg use */
+  --text-main:     #F4F4F5;
+  --text-dim:      #A1A1AA;
+  --text-muted:    #52525B;
+  --font-sans:     'Satoshi', system-ui, sans-serif;
+  --font-mono:     'JetBrains Mono', monospace;
+  --shadow:        0 4px 12px rgba(0,0,0,0.45);
+}
+
+/* ── Global base ─────────────────────────────────────────────── */
+.dark,
+.dark body,
+.dark #root {
+  background-color: var(--bg-app) !important;
+  color: var(--text-main) !important;
+  font-family: var(--font-sans) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   KILL WHITE / LIGHT SURFACES — The root cause of white lines
+   ═══════════════════════════════════════════════════════════════ */
+.dark .bg-white      { background-color: var(--bg-surface) !important; }
+.dark .bg-gray-50    { background-color: #1e1e21 !important; }
+.dark .bg-gray-100   { background-color: var(--bg-surface) !important; }
+.dark .bg-gray-200   { background-color: #2e2e33 !important; }
+.dark .bg-gray-300   { background-color: #3a3a3f !important; }
+.dark .bg-fafafa     { background-color: var(--bg-surface) !important; }
+.dark [style*="background:#fafafa"] { background-color: var(--bg-surface) !important; }
+.dark [style*="background: #fafafa"] { background-color: var(--bg-surface) !important; }
+
+/* ── Hover rows: near-invisible change, no white ─────────────── */
+.dark .hover\:bg-orange-50\/50:hover,
+.dark .hover\:bg-blue-50\/50:hover,
+.dark .hover\:bg-gray-50:hover,
+.dark .hover\:bg-gray-100:hover,
+.dark .hover\:bg-white:hover,
+.dark tbody tr:hover,
+.dark [class*="hover:bg-"]:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+/* ── Borders: kill white lines ───────────────────────────────── */
+.dark .border,
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-gray-300,
+.dark [class*="border-gray"] {
+  border-color: var(--border) !important;
+}
+
+/* Kill divide lines (table rows, list separators) */
+.dark .divide-gray-50 > * + *,
+.dark .divide-gray-100 > * + *,
+.dark .divide-gray-200 > * + *,
+.dark [class*="divide-"] > * + * {
+  border-color: #2a2a2e !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TEXT
+   ═══════════════════════════════════════════════════════════════ */
+.dark .text-gray-900,
+.dark .text-gray-800 { color: var(--text-main) !important; }
+.dark .text-gray-700 { color: #d4d4d8 !important; }
+.dark .text-gray-600 { color: var(--text-dim) !important; }
+.dark .text-gray-500 { color: #d8d8d8 !important; }
+.dark .text-gray-400,
+.dark .text-gray-300 { color: var(--text-muted) !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   BLUE → MUTED VIOLET (not vibrant)
+   ═══════════════════════════════════════════════════════════════ */
+.dark .bg-blue-50   { background-color: #1f1c28 !important; }
+.dark .bg-blue-100  { background-color: #242030 !important; }
+.dark .bg-blue-500,
+.dark .bg-blue-600  { background-color: var(--accent-muted) !important; }
+.dark .bg-blue-700  { background-color: #5b3fa8 !important; }
+
+.dark .text-blue-500,
+.dark .text-blue-600,
+.dark .text-blue-700,
+.dark .text-blue-800,
+.dark .text-blue-900 { color: #a78bfa !important; }
+
+.dark .border-blue-200 { border-color: #2f2840 !important; }
+.dark .border-blue-300 { border-color: #3d3358 !important; }
+.dark .ring-blue-500   { --tw-ring-color: var(--accent) !important; }
+
+/* Indigo / Tests tab */
+.dark .bg-indigo-50   { background-color: #1a1a2e !important; }
+.dark .bg-indigo-100  { background-color: #20203a !important; }
+.dark .text-indigo-400 { color: var(--text-muted) !important; }
+.dark .text-indigo-500,
+.dark .text-indigo-600,
+.dark .text-indigo-700,
+.dark .text-indigo-800,
+.dark .text-indigo-900 { color: #93c5fd !important; }
+.dark .border-indigo-50 { border-color: #2a2a3e !important; }
+
+/* Gradient panels on modals: replace vibrant blue with muted zinc-violet */
+.dark [class*="from-blue-500"],
+.dark [class*="from-blue-600"],
+.dark [class*="to-indigo-600"],
+.dark [class*="to-blue-700"] {
+  background: linear-gradient(135deg, #2a2535 0%, #1f1d2a 100%) !important;
+}
+/* Doctor-specific left panel */
+.dark .from-blue-500.to-indigo-600,
+.dark [class*="from-blue-"][class*="to-indigo-"] {
+  background: linear-gradient(135deg, #26213a, #1a1827) !important;
+}
+/* Receptionist orange-to-red panels */
+.dark [class*="from-orange-"][class*="to-red-"] {
+  background: linear-gradient(135deg, #281a12, #1e1214) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   GREEN (status only — kept readable but not neon)
+   ═══════════════════════════════════════════════════════════════ */
+.dark .bg-green-50   { background-color: #111a14 !important; }
+.dark .bg-green-100  { background-color: #141d16 !important; }
+.dark .text-green-600,
+.dark .text-green-700 { color: #4ade80 !important; }
+.dark .border-green-200 { border-color: #1a3322 !important; }
+.dark .bg-green-500  { background-color: #16a34a !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   RED / ORANGE / YELLOW — toned down
+   ═══════════════════════════════════════════════════════════════ */
+.dark .bg-red-50    { background-color: #1f1212 !important; }
+.dark .bg-red-100   { background-color: #231414 !important; }
+.dark .text-red-600,
+.dark .text-red-700 { color: #f87171 !important; }
+.dark .border-red-200 { border-color: #3d1a1a !important; }
+
+.dark .bg-orange-50  { background-color: #1e1510 !important; }
+.dark .bg-orange-100 { background-color: #221710 !important; }
+.dark .text-orange-600 { color: #fb923c !important; }
+
+.dark .bg-yellow-50  { background-color: #1a1800 !important; }
+.dark .bg-yellow-100 { background-color: #1e1c01 !important; }
+.dark .text-yellow-700 { color: #fbbf24 !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   INPUTS — dark, flat, no bright outlines
+   ═══════════════════════════════════════════════════════════════ */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: var(--bg-input) !important;
+  color: var(--text-main) !important;
+  border-color: var(--border) !important;
+  border-radius: 6px !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+  border-color: var(--accent-muted) !important;
+  box-shadow: 0 0 0 2px rgba(109, 79, 192, 0.25) !important;
+  background-color: var(--bg-input) !important;
+  outline: none !important;
+}
+
+.dark option {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SHADOWS — hard, no softness
+   ═══════════════════════════════════════════════════════════════ */
+.dark .shadow-sm,
+.dark .shadow,
+.dark .shadow-md,
+.dark .shadow-lg,
+.dark .shadow-xl,
+.dark .shadow-2xl {
+  box-shadow: var(--shadow) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   TABLES — no white rows, subdued dividers
+   ═══════════════════════════════════════════════════════════════ */
+.dark table { color: var(--text-main) !important; }
+
+.dark thead th {
+  background-color: #202024 !important;
+  color: var(--text-muted) !important;
+  border-color: #2a2a2e !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.dark tbody tr {
+  background-color: transparent !important;
+  border-color: #2a2a2e !important;
+}
+
+.dark tbody tr:nth-child(even) {
+  background-color: #1e1e21 !important;
+}
+
+.dark tbody tr:hover {
+  background-color: var(--bg-hover) !important;
+}
+
+.dark td { border-color: #2a2a2e !important; }
+
+/* ═══════════════════════════════════════════════════════════════
+   BADGES — muted, not neon
+   ═══════════════════════════════════════════════════════════════ */
+.dark .bg-green-100.text-green-700,
+.dark .bg-green-50.text-green-700 {
+  background-color: #141d16 !important;
+  color: #4ade80 !important;
+}
+.dark .bg-blue-100.text-blue-700,
+.dark .bg-blue-100.text-blue-800 {
+  background-color: #1f1c28 !important;
+  color: #a78bfa !important;
+}
+.dark .bg-red-100.text-red-700,
+.dark .bg-red-100.text-red-600 {
+  background-color: #231414 !important;
+  color: #f87171 !important;
+}
+.dark .bg-orange-100.text-orange-700 {
+  background-color: #221710 !important;
+  color: #fb923c !important;
+}
+.dark .bg-yellow-100.text-yellow-700 {
+  background-color: #1e1c01 !important;
+  color: #fbbf24 !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   MODALS
+   ═══════════════════════════════════════════════════════════════ */
+.dark .fixed.inset-0 {
+  background-color: rgba(0, 0, 0, 0.72) !important;
+  backdrop-filter: none !important;
+}
+
+/* Kill all blurs */
+.dark [class*="backdrop-blur"] { backdrop-filter: none !important; }
+.dark [class*="backdrop-blur-"] { backdrop-filter: none !important; }
+
+.dark .rounded-3xl,
+.dark .rounded-2xl,
+.dark .rounded-xl {
+  background-color: var(--bg-surface);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NAVIGATION / SIDEBAR
+   ═══════════════════════════════════════════════════════════════ */
+.dark nav,
+.dark aside {
+  background-color: var(--bg-surface) !important;
+  border-color: var(--border) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SCROLLBARS — thin, dark
+   ═══════════════════════════════════════════════════════════════ */
+.dark ::-webkit-scrollbar { width: 5px; height: 5px; }
+.dark ::-webkit-scrollbar-track { background: var(--bg-app); }
+.dark ::-webkit-scrollbar-thumb {
+  background: #3F3F46;
+  border-radius: 3px;
+}
+.dark ::-webkit-scrollbar-thumb:hover { background: var(--accent-muted); }
+
+/* ═══════════════════════════════════════════════════════════════
+   FOCUS RING
+   ═══════════════════════════════════════════════════════════════ */
+.dark *:focus-visible {
+  outline: 2px solid var(--accent-muted) !important;
+  outline-offset: 2px !important;
+}

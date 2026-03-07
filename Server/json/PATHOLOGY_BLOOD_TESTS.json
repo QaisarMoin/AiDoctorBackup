@@ -1,0 +1,37 @@
+{
+  "pathology_tests": [
+    {
+      "category": "Blood Tests",
+      "tests": [
+        { "id": "CBC", "name": "Complete Blood Count (CBC)" },
+        { "id": "HB", "name": "Hemoglobin (Hb)" },
+        { "id": "ESR", "name": "ESR" }
+      ]
+    },
+    {
+      "category": "Sugar Tests",
+      "tests": [
+        { "id": "FBS", "name": "Fasting Blood Sugar (FBS)" },
+        { "id": "PPBS", "name": "Post Prandial Blood Sugar (PPBS)" },
+        { "id": "HBA1C", "name": "HbA1c" }
+      ]
+    },
+    {
+      "category": "Lipid Profile",
+      "tests": [
+        { "id": "CHOLESTEROL", "name": "Total Cholesterol" },
+        { "id": "TRIGLYCERIDES", "name": "Triglycerides" },
+        { "id": "HDL", "name": "HDL Cholesterol" },
+        { "id": "LDL", "name": "LDL Cholesterol" }
+      ]
+    },
+    {
+      "category": "Liver & Kidney",
+      "tests": [
+        { "id": "LFT", "name": "Liver Function Test (LFT)" },
+        { "id": "KFT", "name": "Kidney Function Test (KFT)" },
+        { "id": "CREATININE", "name": "Serum Creatinine" }
+      ]
+    }
+  ]
+}

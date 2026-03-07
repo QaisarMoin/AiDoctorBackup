@@ -1,0 +1,33 @@
+{
+  "usg_tests": [
+    {
+      "category": "Abdomen",
+      "tests": [
+        { "id": "USG_ABDOMEN", "name": "USG Abdomen" },
+        { "id": "USG_WHOLE_ABDOMEN", "name": "USG Whole Abdomen" }
+      ]
+    },
+    {
+      "category": "Pelvis",
+      "tests": [
+        { "id": "USG_PELVIS_MALE", "name": "USG Pelvis (Male)" },
+        { "id": "USG_PELVIS_FEMALE", "name": "USG Pelvis (Female)" }
+      ]
+    },
+    {
+      "category": "Pregnancy",
+      "tests": [
+        { "id": "USG_OBSTETRIC", "name": "USG Obstetric (Pregnancy)" },
+        { "id": "USG_TIFFA", "name": "USG Level II / TIFFA" }
+      ]
+    },
+    {
+      "category": "Special USG",
+      "tests": [
+        { "id": "USG_THYROID", "name": "USG Thyroid" },
+        { "id": "USG_BREAST", "name": "USG Breast" },
+        { "id": "USG_SCROTUM", "name": "USG Scrotum" }
+      ]
+    }
+  ]
+}
